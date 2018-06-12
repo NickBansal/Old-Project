@@ -1,0 +1,10 @@
+<h1>Television Shows</h1>
+
+<% shows.forEach(function(data) { %>
+    <li><%= data %></li>
+<% }) %>
+
+<form action="/addshow" method="POST">
+    <input type="text" name="newshows" placeholder="Show">
+    <button>Add Show</button>
+</form>
